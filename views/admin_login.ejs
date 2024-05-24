@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../public/bootstrap.min.css">
+
+</head>
+<body>
+    
+    <section>
+        <div class="container">
+            <form method="post" class="w-50 mx-auto border mt-4 p-4 shadow border-info rounded-4">
+                <h2 class="text-center mt-0">Admin Login</h2>
+                <hr>
+                <div class="row mb-3">
+                  <label for="admin_name" class="col-sm-3 col-form-label">Email</label>
+                  <div class="col-sm-9">
+                    <input type="email" name="email" class="form-control" id="admin_name">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="s1" class="col-sm-3 col-form-label">Password</label>
+                  <div class="col-sm-9">
+                    <input type="password" name="password" class="form-control" id="s1">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary d-block w-100">Admin Login</button>
+            </form>
+            <div class="text-center">
+                <a href="/user" class="btn btn-primary m-2">Staff Login</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../public/bootstrap.min.css">
+
+</head>
+<body>
+    
+   <div class="d-flex">
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark vh-100" style="width: 280px;">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <span class="fs-4">Admin</span>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li>
+          <a href="/dashboard" class="nav-link text-white ">
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="/add_staff" class="nav-link text-white">
+            Add Staff
+          </a>
+        </li>
+        <li>
+          <a href="/addstud" class="nav-link text-white">
+              Add Student
+          </a>
+        </li>
+        <!-- <li>
+          <a href="/addresult" class="nav-link text-white">
+            Add Result
+          </a>
+        </li> -->
+        <li>
+            <a href="/view_result" class="nav-link text-white">
+              view Result
+            </a>
+        </li>
+        <li>
+            <a href="/viewstud" class="nav-link text-white">
+              view Student
+            </a>
+        </li>
+        <li>
+            <a href="/addstd" class="nav-link text-white">
+              Add Standard
+            </a>
+        </li>
+        <li>
+            <a href="/adddiv" class="nav-link text-white active">
+              Add Division
+            </a>
+        </li>
+      </ul>
+      <div>
+        <a href="/logout" class="text-center text-white d-block btn btn-danger text-decoration-none " >
+          Logout
+        </a>
+      </div>
+  </div>
+  
+  <div class="d-flex flex-column flex-shrink-0 p-3 vh-100 overflow-auto" style="width: calc(100vw - 280px);">
+    <form method="post" class="mt-4 p-3 pb-4 px-4 shadow rounded-4">
+        <h2 class="text-center mt-0 text-primary">Add Division</h2>
+        <div class="p-4 shadow mt-3 rounded-4">
+            <div class="row mb-3">
+                <label for="Student" class="col-sm-3 col-form-label">Division</label>
+                <div class="col-sm-9">
+                    <input type="text" name="division" class="form-control" id="division">
+                </div>
+            </div>
+            <button type="submit" class="btn d-block mx-auto btn-outline-primary">Add Division</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
